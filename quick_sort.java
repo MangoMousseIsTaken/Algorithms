@@ -1,9 +1,7 @@
-package fundament;
+
 
 import java.util.Random;
 import java.util.Scanner;
-
-import sun.net.www.content.audio.aiff;
 
 public class quick_sort {
 	public static void main(String[] args){
@@ -32,20 +30,20 @@ public class quick_sort {
 				ia2[i]=1000-i;
 			}
 		*/	
-			long startTime=System.nanoTime();   //»ñÈ¡¿ªÊ¼Ê±¼ä
+			long startTime=System.nanoTime();   //è·å–å¼€å§‹æ—¶é—´
 			quicksort(ia,0,ia.length-1);
-			long endTime=System.nanoTime(); //»ñÈ¡½áÊøÊ±¼ä
-			System.out.println("quicksort³ÌĞòÔËĞĞÊ±¼ä£º "+(endTime-startTime)+"ns");			
+			long endTime=System.nanoTime(); //è·å–ç»“æŸæ—¶é—´
+			System.out.println("quicksortç¨‹åºè¿è¡Œæ—¶é—´ï¼š "+(endTime-startTime)+"ns");			
 			for(int i=0; i<ia.length; i++){
 				System.out.print(ia[i]+" ");
 			}
 			System.out.println();
 			
 			
-			long startTime2=System.nanoTime();   //»ñÈ¡¿ªÊ¼Ê±¼ä
+			long startTime2=System.nanoTime();   //è·å–å¼€å§‹æ—¶é—´
 			random_quicksort(ia2,0,ia2.length-1);
-			long endTime2=System.nanoTime(); //»ñÈ¡½áÊøÊ±¼ä
-			System.out.println("randomquicksort³ÌĞòÔËĞĞÊ±¼ä£º "+(endTime2-startTime2)+"ns");			
+			long endTime2=System.nanoTime(); //è·å–ç»“æŸæ—¶é—´
+			System.out.println("randomquicksortç¨‹åºè¿è¡Œæ—¶é—´ï¼š "+(endTime2-startTime2)+"ns");			
 			for(int i=0; i<ia2.length; i++){
 				System.out.print(ia2[i]+" ");
 			}
